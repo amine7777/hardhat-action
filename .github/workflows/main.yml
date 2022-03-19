@@ -18,7 +18,6 @@ jobs:
 
     - name: Create a scenario
       uses: amine7777/hardhat-action@v1
-      with:
-        command: --version
+        
 
 
