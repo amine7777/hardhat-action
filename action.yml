@@ -1,0 +1,26 @@
+
+---
+name: Hardhat
+description: Hardhart action to test and deploy solidity smart contracts.
+author: amine7777
+
+branding:
+  icon: play
+  color: green
+
+inputs:
+  command:
+    description: Command to pass to hardhart
+    required: true
+    default: --help
+
+  working_dir:
+    description: |
+      Path to another directory in the repository, where hardhat command will be issued from.
+      Useful in those cases where hardhat config is not in git repository root.
+    required: false
+    default: ${{ github.repository }}
+
+runs:
+  using: docker
+  image: 'docker://amine7777/hardhat-action:0.0.1'
