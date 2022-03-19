@@ -15,9 +15,12 @@ jobs:
     name: Deploy smart contract
     steps:
     - uses: actions/checkout@v2
-
-    - name: Create a scenario
+    
+    - name: Get version
       uses: amine7777/hardhat-action@v1
+      with:
+        command: --version
+        
         
 
 
