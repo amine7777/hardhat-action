@@ -1,6 +1,6 @@
 
 ---
-name: Hardhat
+name: Hardhat Solidity
 description: Hardhart action to test and deploy solidity smart contracts.
 author: amine7777
 
